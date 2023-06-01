@@ -98,6 +98,7 @@ const Modal: React.FC<ModalProps> = ({
                   />
                   {/* <Button outline label="next" /> */}
                 </div>
+                {footer}
               </div>
             </div>
           </div>
