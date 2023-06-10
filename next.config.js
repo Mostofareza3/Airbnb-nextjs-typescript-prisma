@@ -1,17 +1,15 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-experimental: {
-  reactRootAttributes: {
-    // Remove extra attributes from the body of the HTML document
-    dataNewGrCsCheckLoaded: false;
-    dataGrExtInstalled: false;
-    czShortcutListen: false;
+const nextConfig = {
+  experimental: {
+    appDir: true,
+  },
+  images: {
+    domains: [
+      'res.cloudinary.com', 
+      'avatars.githubusercontent.com',
+      'lh3.googleusercontent.com'
+    ]
   }
 }
 
-images: {
-  domains: ["avatars.githubusercontent.com"];
-}
-
-module.exports = nextConfig;
+module.exports = nextConfig
